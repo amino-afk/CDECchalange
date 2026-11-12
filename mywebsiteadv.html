@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>
+    <title>Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: black;
+      color: blue;
+    }
+
+    .card {
+      max-width: 400px;
+      margin: 30px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 1.8em;
+    }
+
+    label {
+      display: block;
+      margin-top: 12px;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 4px;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+    }
+
+    input.validok {
+      border-color: green;
+    }
+
+    input.validbad {
+      border-color: red;
+    }
+
+    .errwarn {
+      color: red;
+      font-size: 0.85em;
+      min-height: 18px;
+    }
+
+    button {
+      width: 100%;
+      margin-top: 20px;
+      padding: 10px;
+      background: #222;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>Register</h1>
+
+    <form id="form">
+      <label>Full Name
+        <input type="text" id="namefld">
+      </label>
+      <div class="errn" id="errname"></div>
+
+      <label>Email
+        <input type="text" id="mailfld">
+      </label>
+      <div class="errm" id="errmail"></div>
+
+      <label>Password
+        <input type="password" id="passfld">
+      </label>
+      <div class="errm" id="errpass"></div>
+
+      <label>Confirm Password
+        <input type="password" id="confpass">
+      </label>
+      <div class="errm" id="errconf"></div>
+
+      <label>Phone Number
+        <input type="text" id="phonefld">
+      </label>
+      <div class="errm" id="errphone"></div>
+
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+</body>
+</html>
